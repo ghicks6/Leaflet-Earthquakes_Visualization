@@ -1,6 +1,6 @@
 // Define streetmap and darkmap layers
 var streetmap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
-  attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
+  attribution: "<a href='https://www.mapbox.com/about/maps/'>Mapbox</a> <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
   tileSize: 512,
   maxZoom: 10,
   zoomOffset: -1,
@@ -11,19 +11,15 @@ var streetmap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}
 // Create our map, giving it the streetmap and earthquakes layers to display on load
 var myMap = L.map("map", {
   center: [
-    37.09, -95.71
-  ],
+    37.09, -95.71],
   zoom: 3,
-
 });
-
 streetmap.addTo(myMap);
 
 // Store our API endpoint inside queryUrl
 var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 d3.json(queryUrl, function(data) {
 
-  
 // Function to set the style of the circle based on the magnitude of the earthquake
   function circleStyle(feature) {
     return {
@@ -75,7 +71,6 @@ d3.json(queryUrl, function(data) {
         layer.bindPopup("<h4>Location: " + feature.properties.place + 
         "</h4><hr><p>Date & Time: " + new Date(feature.properties.time) + 
         "</p><hr><p>Magnitude: " + feature.properties.mag + "</p>");
-
     }
   // Add earthquakes layer to the map
   }).addTo(myMap);
@@ -90,7 +85,6 @@ d3.json(queryUrl, function(data) {
 
     var magnitudeLevels = [0, 1, 2, 3, 4, 5];
     var colors = ["#2c99ea", "#2ceabf", "#92ea2c", "#d5ea2c","#eaa92c", "#ea2c2c"];
-
 
   // Loop through the intervals of colors to put it in the label
     for (var i = 0; i<magnitudeLevels.length; i++) {
