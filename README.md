@@ -2,7 +2,7 @@
 
 ## Background
 
-![1-Logo](Images/1-Logo.png)
+![1-Logo]https://github.com/bigbluey/Visualizing-Data-with-Leaflet/raw/master/Images/earthquake_map.png
 
 Welcome to the United States Geological Survey, or USGS for short! The USGS is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. As a new hire, you will be helping them out with an exciting new project!
 
@@ -24,7 +24,7 @@ The USGS is interested in building a new set of tools that will allow them visua
 
 ### Level 1: Basic Visualization
 
-![2-BasicMap](Images/2-BasicMap.png)
+![2-BasicMap]https://github.com/bigbluey/Visualizing-Data-with-Leaflet/raw/master/Images/earthquake_map.png
 
 Your first task is to visualize an earthquake data set.
 
@@ -54,7 +54,7 @@ Your first task is to visualize an earthquake data set.
 
 ### Level 2: More Data (Optional)
 
-![5-Advanced](Images/5-Advanced.png)
+![5-Advanced]https://github.com/bigbluey/Visualizing-Data-with-Leaflet/raw/master/Images/fault_lines.png
 
 The USGS wants you to plot a second data set on your map to illustrate the relationship between tectonic plates and seismic activity. You will need to pull in a second data set and visualize it along side your original set of data. Data on tectonic plates can be found at <https://github.com/fraxen/tectonicplates>.
 
